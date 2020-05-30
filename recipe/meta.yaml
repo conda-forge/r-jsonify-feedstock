@@ -1,4 +1,4 @@
-{% set version = '1.1.1' %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jsonify_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jsonify/jsonify_{{ version }}.tar.gz
-  sha256: 8084faab14f03e19df9c40d6111a458056fca79757dde65983bcfbbc527af493
+  sha256: 5a46f3886b00658345145740126cce53aa67d9ea45c35c449f7b48f2ac29b596
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -48,11 +48,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=jsonify
   license: GPL-2
-  summary: Conversions between 'R' objects and Javascript Object Notation (JSON) using the 'rapidjsonr'
-    library <https://CRAN.R-project.org/package=rapidjsonr>.
+  summary: Conversions between 'R' objects and Javascript Object Notation (JSON) using the 'rapidjsonr' library <https://CRAN.R-project.org/package=rapidjsonr>.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
