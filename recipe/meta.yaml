@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jsonify_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jsonify/jsonify_{{ version }}.tar.gz
-  sha256: 5a46f3886b00658345145740126cce53aa67d9ea45c35c449f7b48f2ac29b596
+  sha256: 929191ab32e34af6a02ad991e29314cc78ea40763fcf232388ef2d132137fbce
 
 build:
   merge_build_host: true  # [win]
