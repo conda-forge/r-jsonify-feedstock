@@ -3,7 +3,7 @@ About r-jsonify
 
 Home: https://CRAN.R-project.org/package=jsonify
 
-Package license: GPL-2
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jsonify-feedstock/blob/master/LICENSE.txt)
 
