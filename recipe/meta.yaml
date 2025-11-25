@@ -1,4 +1,4 @@
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jsonify_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jsonify/jsonify_{{ version }}.tar.gz
-  sha256: 3745e962592f021a3deaed8b2f6b99c4f7181f28e095300a96d1c2b08af4af2f
+  sha256: 137a1e527a9cd24e646f9ce76a999aeef7753e7b90c0167adbdd737048d90e46
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
